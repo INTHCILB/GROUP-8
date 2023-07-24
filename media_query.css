@@ -1,0 +1,53 @@
+/* Media Queries for navbar-top*/
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .logo-container {
+      margin-right: 40px; 
+    }
+    .logo {
+      font-size: 28px; 
+    }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1300px) {
+    .logo-container {
+      margin-right: auto; 
+    }
+    .logo {
+      font-size: 28px; 
+    }
+  }
+  @media screen and (max-width: 1360px) {
+    .logo-container {
+      margin-right: auto; 
+    }
+    .logo {
+      font-size: 30px; 
+    }
+  }
+  /*---------------------------------------------*/
+  /* Media Queries for navbar-bot*/
+
+  @media screen and (min-width: 1340px) and (max-width: 1360px) {
+    .shop-by-category{
+        padding: 12px 20px 10px 20px;
+        margin-right: 60px;
+    }
+  }
+
+  @media screen and (min-width: 1320px) and (max-width: 1340px) {
+    .shop-by-category{
+        padding: 12px 20px 10px 20px;
+        margin-right: 40px;
+    }
+  }
+  @media screen and (min-width: 1300px) and (max-width: 1320px) {
+    .shop-by-category{
+        padding: 12px 20px 10px 20px;
+        margin-right: 20px;
+    }
+  }
+  /*---------------------------------------------*/
+
+ 
+  
+  
+  
