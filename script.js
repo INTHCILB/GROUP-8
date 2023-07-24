@@ -247,3 +247,27 @@ linkRContainers.forEach((linkRContainer) => {
     dropdownMenu.style.display = 'none';
   });
 });
+
+// Smooth scrolling to target containers with offset
+function smoothScrollToTarget(event) {
+  event.preventDefault();
+  const targetId = event.currentTarget.getAttribute("href");
+  const targetElement = document.querySelector(targetId);
+  let navbarTopHeight = document.querySelector(".navbar-top").offsetHeight;
+  let navbarBotHeight = document.querySelector(".navbar-bot").offsetHeight;
+  const spacing = 20; // Adjust the spacing value as needed
+
+  const targetOffset = targetElement.getBoundingClientRect().top + window.pageYOffset; // Calculate the offset of the target container relative to the viewport
+
+  window.scroll({
+      top: targetOffset - navbarTopHeight - navbarBotHeight - spacing,
+      behavior: "smooth"
+  });
+}
+
+// Add click event listeners to all links with class "bcl-text"
+const links = document.querySelectorAll(".bcl-text");
+links.forEach(link => {
+  link.addEventListener("click", smoothScrollToTarget);
+});
+
