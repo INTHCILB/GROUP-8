@@ -6,7 +6,7 @@
 
 /* Google Fonts - Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900;1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900;1000&display=swap');
 /* All */
 *{
     margin: 0;
@@ -341,6 +341,78 @@ i{
     height: 100%;
     border-radius: 5px;
     cursor: pointer;
+}
+.item{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.image-text1{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 100%;
+}
+.s-logo-container{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    font-weight: 600;
+}
+.s-square{
+    color: white;
+    margin-left: 5px;
+}
+.image-text1 .slogan{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.banner-btn-container{
+    margin-top: 10px;
+}
+.b-btn-text{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    
+}
+.banner-btn{
+    border: none;
+    background-color: rgb(17, 17, 17);
+    border-radius: 20px;
+}
+.banner-btn:hover{
+    background-color: black;
+    transform: scale(1.1);
+}
+.image-text2{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 0;
+    margin: 0;
+}
+.image-text2 .header{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 55px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.image-text2 .p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
 }
 .buttons i{
     width: 50px;
@@ -942,7 +1014,7 @@ i{
     text-align: center;
 }
 
-/*Banner*/
+/*Banner
 .banner-main-container{
     background-image: url("img/try/try-1-a.PNG");
     width: 100%;
@@ -983,7 +1055,7 @@ i{
     border: none;
     background-color: rgb(255, 222, 36);
     border-radius: 20px;
-}
+}*/
 
 /*Footer*/
 .footer-top{
