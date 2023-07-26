@@ -55,6 +55,27 @@ dots.forEach((li,key)=> {
 })
 
 //product slider-houses
+
+function filterCarouselByDefault() {
+  // Find the default active filter and its text
+  const defaultFilter = document.querySelector(".rlp-filter .active");
+  if (defaultFilter) {
+    const filterText = defaultFilter.textContent.toLowerCase().trim();
+    const carouselItems = document.querySelectorAll(".c .rlp-container");
+
+    // Iterate through each carousel item and check if it matches the default filter
+    carouselItems.forEach(item => {
+      const place = item.querySelector(".rlp-d-place").textContent.toLowerCase().trim();
+      if (place !== filterText) {
+        item.style.display = "none"; // Hide the item if it doesn't match the filter
+      }
+    });
+  }
+}
+
+ // Call the filterCarouselByDefault function when the page is fully loaded
+ window.addEventListener("load", filterCarouselByDefault);
+
 const carousel = document.querySelector(".c");
 const arrowBtns = document.querySelectorAll(".w .a");
 const firstCardWidth = carousel.querySelector(".cd").offsetWidth;
@@ -67,18 +88,66 @@ arrowBtns.forEach(btn => {
 });
 
 //product slider-cars
+function filterCarouselByDefault2() {
+  // Find the default active filter and its text
+  const defaultFilter2 = document.querySelector(".w2 .rlp-filter .active");
+  if (defaultFilter2) {
+    const filterText2 = defaultFilter2.textContent.toLowerCase().trim();
+    console.log("Default Filter:", filterText2); // Add this line to check the default filter text
+    const carouselItems2 = document.querySelectorAll(".c2 .rlp-container");
+
+    // Iterate through each carousel item and check if it matches the default filter
+    carouselItems2.forEach(item => {
+      const place = item.querySelector(".rlp-d-place").textContent.toLowerCase().trim();
+      console.log("Item Place:", place); // Add this line to check the place value of each item
+      if (place !== filterText2) {
+        item.style.display = "none"; // Hide the item if it doesn't match the filter
+      }
+    });
+  }
+}
+
+// Call the filterCarouselByDefault2 function when the page is fully loaded
+document.addEventListener("DOMContentLoaded", filterCarouselByDefault2);
+
+// Rest of your JavaScript code for the second carousel functionality
 const carousel2 = document.querySelector(".c2");
 const arrowBtns2 = document.querySelectorAll(".w2 .a");
 const firstCardWidth2 = carousel2.querySelector(".cd2").offsetWidth;
 
 // Add event listener for the arrow buttons to scroll the carousel left and right
 arrowBtns2.forEach(btn => {
-    btn.addEventListener("click", () => {
-        carousel2.scrollLeft += btn.id === "left" ? -(firstCardWidth2*4) : (firstCardWidth2*4);
-    })
+  btn.addEventListener("click", () => {
+    carousel2.scrollLeft += btn.id === "left" ? -(firstCardWidth2 * 4) : (firstCardWidth2 * 4);
+  });
 });
 
+
+
 //product slider-furniture
+
+function filterCarouselByDefault3() {
+  // Find the default active filter and its text
+  const defaultFilter3 = document.querySelector(".w3 .rlp-filter .active");
+  if (defaultFilter3) {
+    const filterText3 = defaultFilter3.textContent.toLowerCase().trim();
+    console.log("Default Filter:", filterText3); // Add this line to check the default filter text
+    const carouselItems3 = document.querySelectorAll(".c3 .rlp-container");
+
+    // Iterate through each carousel item and check if it matches the default filter
+    carouselItems3.forEach(item => {
+      const place = item.querySelector(".rlp-d-place").textContent.toLowerCase().trim();
+      console.log("Item Place:", place); // Add this line to check the place value of each item
+      if (place !== filterText3) {
+        item.style.display = "none"; // Hide the item if it doesn't match the filter
+      }
+    });
+  }
+}
+
+// Call the filterCarouselByDefault2 function when the page is fully loaded
+document.addEventListener("DOMContentLoaded", filterCarouselByDefault3);
+
 const carousel3 = document.querySelector(".c3");
 const arrowBtns3 = document.querySelectorAll(".w3 .a");
 const firstCardWidth3 = carousel3.querySelector(".cd3").offsetWidth;
@@ -91,6 +160,29 @@ arrowBtns3.forEach(btn => {
 });
 
 //product slider-featured-products
+
+function filterCarouselByDefault4() {
+  // Find the default active filter and its text
+  const defaultFilter4 = document.querySelector(".w4 .rlp-filter .active");
+  if (defaultFilter4) {
+    const filterText4 = defaultFilter4.textContent.toLowerCase().trim();
+    console.log("Default Filter:", filterText4); // Add this line to check the default filter text
+    const carouselItems2 = document.querySelectorAll(".c4 .rlp-container");
+
+    // Iterate through each carousel item and check if it matches the default filter
+    carouselItems2.forEach(item => {
+      const place4 = item.querySelector(".rlp-d-place").textContent.toLowerCase().trim();
+      console.log("Item Place:", place4); // Add this line to check the place value of each item
+      if (place4 !== filterText4) {
+        item.style.display = "none"; // Hide the item if it doesn't match the filter
+      }
+    });
+  }
+}
+
+// Call the filterCarouselByDefault2 function when the page is fully loaded
+document.addEventListener("DOMContentLoaded", filterCarouselByDefault4);
+
 const carousel4 = document.querySelector(".c4");
 const arrowBtns4 = document.querySelectorAll(".w4 .a");
 const firstCardWidth4 = carousel4.querySelector(".cd4").offsetWidth;
