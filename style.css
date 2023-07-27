@@ -894,6 +894,7 @@ i{
 }
 .Time-listed{
     font-weight: 500;
+    color: green;
 }
 .profile-chat{
     font-family: 'Nunito Sans', sans-serif;
@@ -995,7 +996,8 @@ i{
     justify-content: center;
 }
 .rlg-time-listed{
-    font-weight: 500;
+    font-weight: 600;
+    color: green;
 }
 .rlg-bot-contents{
     margin: 0 15px 0 15px;
